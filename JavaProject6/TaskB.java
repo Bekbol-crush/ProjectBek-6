@@ -1,19 +1,21 @@
- import java.util.Scanner;
- public class TaskB {
-     public static void main(String[] args) {
-         Scanner sc = new Scanner(System.in);
 
-         String s = sc.nextLine();
-         int count = 0;
+import java.util.Scanner;
+public class TaskB {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-         for (int i = 0; i < s.length(); i++) {
-             char c = s.charAt(i);
+        String s = sc.nextLine();
+        int count = 0;
 
-             if (c >= 'a' && c <= 'z' && c != 'a' && c != 'e' && c != 'i' && c != 'o' && c != 'u') {
-                 count++;
-             }
-         }
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
 
-         System.out.println("Consonants = " + count);
-     }
- }
+            if (c >= 'a' && c <= 'z' && c != 'a' && c != 'e' && c != 'i' && c != 'o' && c != 'u') {
+                count++;
+            }
+        }
+
+        System.out.println("Consonants = " + count);
+    }
+}
+
